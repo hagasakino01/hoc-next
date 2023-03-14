@@ -116,7 +116,7 @@ export default function Home() {
   }, [input]);
 
   const AddValue = () => {
-    const number: any = input.number;
+    const number: any = input?.number;
     const kqSimple = to_vietnamese(number);
     const kq = kqSimple.charAt(0).toUpperCase() + kqSimple.slice(1);
     const text = number || "";
