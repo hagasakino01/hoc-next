@@ -4,10 +4,10 @@ import styles from "@/styles/Home.module.css";
 import { useEffect, useState } from "react";
 
 export default function Home() {
-  const [input, setInput] = useState({});
+  const [input, setInput] = useState<any>({});
   const [output, setOutput] = useState("");
   const handleChange = (e: any) =>
-    setInput((prevState) => ({
+    setInput((prevState: any) => ({
       ...prevState,
       [e.target.name]: e.target.value,
     }));
